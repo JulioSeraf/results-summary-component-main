@@ -1,0 +1,87 @@
+@charset "UTF-8";
+@font-face {
+    font-family:"hanken";
+    src: url("assets/fonts/HankenGrotesk-VariableFont_wght.ttf") format("trutype/ttf");
+}
+*{
+    margin: 0;
+    padding:0;
+
+}
+:root{
+    --amarillo:hsl(39, 100%, 56%);
+    --verde: hsl(166, 100%, 37%);
+    --azul:hsl(234, 85%, 45%);
+    --rojo:Light red;
+    --azulfundo1:hsl(252, 100%, 67%);
+    --azulfundo2:hsl(241, 81%, 54%);
+    --violetfundo1:hsla(256, 72%, 46%, 1);
+    --violetfundo2:hsla(241, 72%, 46%, 0);
+    --Paleblue: hsl(221, 100%, 96%);
+    --Lightlavender: hsl(241, 100%, 89%);
+    --Darkgrayblue: hsl(224, 30%, 27%);
+}
+body{
+    background-color: var(--Paleblue );
+    
+}
+.Result{
+    background-color: var(--violetfundo1);
+    color: white;
+    width:500px;
+    height: 600px;
+    margin: auto;
+    border-radius: 20px;
+    text-align: center;
+    padding-bottom: 30px;
+
+}
+.Result > .circulo{
+    width: 300px;
+    height:270px;
+    margin: auto;
+    margin-top:50px;
+    border-radius: 100%;
+    background-image: linear-gradient(to top, var(--azulfundo1),var(--violetfundo2));
+    text-align: center;
+    box-shadow: 0 0 160px var(--azulfundo1);
+}
+.Result  h2 {
+    padding-top: 60px;
+    font-size: 7em;  
+}
+.Result p{
+    color: rgba(255, 255, 255, 0.61);
+    font-size: 1.5em;
+}
+.Result h1{
+    padding-top: 40px;
+}
+#reh1{
+    padding-bottom: 20px;
+    font-size: 2.5em;
+}
+.Result > p {
+    padding:0 100px 0 100px;
+}
+.summary{
+    background-color:white;
+    width:500px;
+    height: 600px;
+    margin: auto;
+    border-radius: 20px;
+    padding-bottom: 30px;
+}
+
+button{
+    display: block;
+    border-radius: 50px;
+    border-style: none;
+    background-color: var(--azulfundo2);
+    color: white;
+    margin: auto;
+    width: 400px;
+    padding: 20px;
+    font-size:1.5em;
+    font-weight: bold;
+}
