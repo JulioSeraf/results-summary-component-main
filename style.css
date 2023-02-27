@@ -11,8 +11,7 @@
 :root{
     --amarillo:hsl(39, 100%, 56%);
     --verde: hsl(166, 100%, 37%);
-    --azul:hsl(234, 85%, 45%);
-    --rojo:Light red;
+    --azul:hsl(234, 85%, 45%);;
     --azulfundo1:hsl(252, 100%, 67%);
     --azulfundo2:hsl(241, 81%, 54%);
     --violetfundo1:hsla(256, 72%, 46%, 1);
@@ -21,24 +20,36 @@
     --Lightlavender: hsl(241, 100%, 89%);
     --Darkgrayblue: hsl(224, 30%, 27%);
 }
-body{
+body{ height: 100vh;
     background-color: var(--Paleblue );
+    border: 1px solid black;
     
+}
+#contener{
+    background-color: white;
+    box-shadow: 10px 10px 10px rgba(66, 55, 219, 0.521);
+    display:flex;
+    margin: auto;
+    width: 800px;
+    border-radius: 30px;
 }
 .Result{
     background-color: var(--violetfundo1);
     color: white;
-    width:500px;
-    height: 600px;
+    width:400px;
+    height: 500px;
     margin: auto;
-    border-radius: 20px;
+    border-radius: 30px;
     text-align: center;
     padding-bottom: 30px;
 
 }
+.Result > h1{
+    padding: 30px 0 0 0;
+}
 .Result > .circulo{
-    width: 300px;
-    height:270px;
+    width: 220px;
+    height:215px;
     margin: auto;
     margin-top:50px;
     border-radius: 100%;
@@ -47,40 +58,65 @@ body{
     box-shadow: 0 0 160px var(--azulfundo1);
 }
 .Result  h2 {
-    padding-top: 60px;
-    font-size: 7em;  
+    padding-top: 50px;
+    font-size: 6em;  
 }
-.Result p{
+.Result  p{
     color: rgba(255, 255, 255, 0.61);
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
-.Result h1{
-    padding-top: 40px;
+.Result > p{
+    padding: 0 60px;
 }
 #reh1{
-    padding-bottom: 20px;
+    padding: 20px 0 ;
     font-size: 2.5em;
 }
-.Result > p {
-    padding:0 100px 0 100px;
-}
-.summary{
+#summary{
     background-color:white;
-    width:500px;
-    height: 600px;
-    margin: auto;
-    border-radius: 20px;
+    width:400px;
+    height: 500px;
+    border-radius:0 30px 30px 0;
     padding-bottom: 30px;
 }
+#summary > h1{
+    padding: 30px 0 0 30px;
+}
+#summary > .boxsummary{
+    margin: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    
 
+}
+div>#reaction{
+    background-color:rgba(255, 0, 0, 0.103);
+    color:rgba(255, 0, 0, 0.493);
+ 
+}
+div#memory{
+    background-color:rgba(255, 255, 0, 0.103);
+    color:var(--amarillo);
+   
+}
+div#verbal{
+    background-color:rgba(0, 255, 85, 0.100);
+    color:var(--verde);
+   
+}
+div#visual{
+    background-color:rgba(0, 4, 255, 0.100);
+    color:var(--azul);
+    
+}
 button{
     display: block;
+    margin: auto;
     border-radius: 50px;
     border-style: none;
     background-color: var(--azulfundo2);
     color: white;
-    margin: auto;
-    width: 400px;
+    width: 300px;
     padding: 20px;
     font-size:1.5em;
     font-weight: bold;
